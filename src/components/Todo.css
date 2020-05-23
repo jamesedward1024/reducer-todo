@@ -1,0 +1,102 @@
+.App {
+    text-align: center;
+  }
+
+  h1 {
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+
+  .todo-container {
+    display: flex;
+    min-height: 85vh;
+  }
+
+  form {
+    padding: 0 50px;
+    border-right: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  form * {
+    margin-bottom: 20px;
+  }
+
+  input, button {
+    outline: none;
+    border: 1px solid black;
+  }
+
+  input {
+    width: 300px;
+    padding: 10px;
+    transform: translate(-5px, 5px);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  input:focus {
+    box-shadow: -5px 5px black;
+    transform: translate(0, 0);
+  }
+
+  button {
+    padding: 10px 16px;
+    box-shadow: -5px 5px black;
+    background-color: black;
+    border: 1px solid #eeeeee;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  button:active {
+    box-shadow: none;
+    transform: translate(-5px, 5px);
+  }
+
+  .todo-list {
+    width: 100%;
+    text-align: left;
+  }
+
+  .todo-list ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 85vh;
+    margin: 0 10px;
+  }
+
+  .todo-list li {
+    width: 48%;
+    border-bottom: 1px solid gray;
+  }
+
+  .todo-item {
+    padding: 10px;
+  }
+
+  .complete {
+    text-decoration: line-through;
+  }
+
+  .incomplete {
+    text-decoration: none;
+  }
+
+  .todo-date {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 13px;
+    color: #474747;
+  }
+
+  .todo-date span {
+    padding-left: 10px;
+    color: #d42e2e;
+    font-weight: bold;
+  }
